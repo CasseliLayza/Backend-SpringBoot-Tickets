@@ -1,9 +1,10 @@
 ![logo](src/main/resources/static/asets/img/msvc-tickets.png)
-# Tickets Microservice - Spring Boot
+
+# Backend Tickets API - Spring Boot
 
 ## 📌 Descripción
 
-Este proyecto es un microservicio backend desarrollado con **Spring Boot**, orientado a la gestión de **tickets**. Implementa una arquitectura por capas (Controller → Service → Repository), utilizando **DTOs**, manejo de **excepciones** y una capa de **seguridad** basada en filtros.
+Este proyecto es un **backend REST** desarrollado con **Spring Boot**, orientado a la gestión de **tickets**. Implementa una arquitectura por capas (Controller → Service → Repository), utilizando **DTOs**, manejo de **excepciones** y una capa de **seguridad** basada en filtros.
 
 ---
 
@@ -40,13 +41,13 @@ Este proyecto es un microservicio backend desarrollado con **Spring Boot**, orie
 
 ## ⚙️ Tecnologías Usadas
 
-* **Java** (versión según tu entorno)
-* **Spring Boot**
-* **Spring Web**
-* **Spring Data JPA** (si aplica)
-* **Spring Security** (capa `security/` y filtros)
-* **Maven** (Wrapper incluido)
-* **JUnit 5** (tests)
+- **Java** (versión según tu entorno)
+- **Spring Boot**
+- **Spring Web**
+- **Spring Data JPA** (si aplica)
+- **Spring Security** (capa `security/` y filtros)
+- **Maven** (Wrapper incluido)
+- **JUnit 5** (tests)
 
 ---
 
@@ -60,10 +61,10 @@ src/main/resources/
 
 Normalmente aquí tendrás `application.properties` o `application.yml` con:
 
-* conexión a base de datos
-* puerto
-* variables de seguridad (JWT, etc.)
-* configuración de logs
+- conexión a base de datos
+- puerto
+- variables de seguridad (JWT, etc.)
+- configuración de logs
 
 > Si me pegas tu `application.properties/yml`, lo agrego documentado con ejemplos.
 
@@ -73,8 +74,8 @@ Normalmente aquí tendrás `application.properties` o `application.yml` con:
 
 ### Pre-requisitos
 
-* Java (JDK)
-* Maven (opcional, porque ya tienes Maven Wrapper)
+- Java (JDK)
+- Maven (opcional, porque ya tienes Maven Wrapper)
 
 ### Ejecutar con Maven Wrapper
 
@@ -120,8 +121,8 @@ Ejecutar:
 
 Base URL:
 
-* Developers: `/api/v1/developers`
-* Tickets: `/api/v1/tickets`
+- Developers: `/api/v1/developers`
+- Tickets: `/api/v1/tickets`
 
 ### 👨‍💻 DeveloperController
 
@@ -136,8 +137,8 @@ Base URL:
 
 Notas:
 
-* Tiene `@CrossOrigin(originPatterns = "*")` (permite CORS desde cualquier origen).
-* En `POST /register` se fuerza `admin=false` antes de crear.
+- Tiene `@CrossOrigin(originPatterns = "*")` (permite CORS desde cualquier origen).
+- En `POST /register` se fuerza `admin=false` antes de crear.
 
 ### 🎫 TicketController
 
@@ -152,7 +153,7 @@ Notas:
 
 Notas:
 
-* Este controller retorna directamente la entidad `Ticket` (no DTO). Si quieres un API más consistente, puedes migrar a DTOs como en `DeveloperController`.
+- Este controller retorna directamente la entidad `Ticket` (no DTO). Si quieres un API más consistente, puedes migrar a DTOs como en `DeveloperController`.
 
 ---
 
@@ -160,9 +161,9 @@ Notas:
 
 La carpeta `exception/` contiene las excepciones personalizadas y (si aplica) un manejador global tipo `@ControllerAdvice` para responder con:
 
-* códigos HTTP correctos (400/404/409/500)
-* mensajes consistentes
-* payload de error estándar
+- códigos HTTP correctos (400/404/409/500)
+- mensajes consistentes
+- payload de error estándar
 
 ---
 
@@ -182,7 +183,7 @@ Para dudas, sugerencias o contribuciones:
 
 💡 **Desarrollado por Casseli Layza como parte de un curso/proyecto con Spring Boot.**
 
-***💚 ¡Gracias por revisar este proyecto!... Powered by Casse 🌟📚🚀...!!***
+**_💚 ¡Gracias por revisar este proyecto!... Powered by Casse 🌟📚🚀...!!_**
 
 ## Derechos Reservados
 
