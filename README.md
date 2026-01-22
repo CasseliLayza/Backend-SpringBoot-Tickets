@@ -66,7 +66,7 @@ Normalmente aquí tendrás `application.properties` o `application.yml` con:
 - variables de seguridad (JWT, etc.)
 - configuración de logs
 
-> Si me pegas tu `application.properties/yml`, lo agrego documentado con ejemplos.
+
 
 ---
 
